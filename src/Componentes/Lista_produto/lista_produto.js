@@ -22,7 +22,7 @@ Categoria(e) {
 
  };   
    componentDidMount(){                    
-       axios.get('http://localhost:1977/api/produtos' ) //API em node projetada
+       axios.get('http://localhost:8000' ) //API em node projetada  -  api em produtos 'http://localhost:1977/api/produtos
        .then( (resposta) => { 
               this.setState({dados:resposta.data} )
               console.log(resposta.data)
